@@ -1,14 +1,12 @@
 body {
   margin: 0;
+  padding: 0;
 }
-
 
 footer {
   background-color: #F2385A;
   width: 100%;
 }
-
-
 
 html{
   font-family: 'Roboto', sans-serif;
@@ -29,7 +27,7 @@ nav {
   height: 50px;
 }
 
-img {
+nav img {
   height: 30px;
 }
 
@@ -51,8 +49,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #F5A503;
-  font-size: 1.5em;
+  color: #00B0B9;
+  font-size: 1.2em;
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 20px;
@@ -62,17 +60,132 @@ nav ul li a:hover {
   color: #F2385A;
 }
 
+/* Footer */ 
+
+footer {
+  background-color: #00B0B9;
+  color: blue;
+  width: 100%;
+  height: 50px;
+}
 
 
+footer ul {
+  list-style: none;
+  float: right;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+
+footer a {
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+footer a:hover {
+  color: #F2385A;
+}
 
 /* Header */
 
-
-#header {
-  background-color: #F2385A
+#headercont {
+  background-color: #00B0B9;  
 }
 
-#header h1{
-    margin:0px;
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.area {
+  margin: auto;
+  margin-top: 10px;
+  border: 2px solid black;
+  max-width: 48%;
+}
+
+.area img {
+  height: 500px;
+  max-width: 100%;
+}
+
+
+/* Pricing Boxes */
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.box {
+  border: 2px solid #F2385A;
+  margin: auto;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.pricingheader {
+  font-size: 24px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #F2385A;
+  color: white;
+}
+
+.price {
+  font-size: 48px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bolder; 
+  background-color: white;
+}
+
+/* Button */
+
+.button {
+  font-size: 20px;
+  background-color: #F2385A;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 12px;
+  margin: 10px auto 10px auto;
+}
+
+/* Main text */
+
+#maintext {
+  font-size: 20px;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Video */
+
+#video {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Media query */
+
+
+@media (max-width: 500px) {
+  #maintext {
+    font-size: 18px;
+  }
 }
 
